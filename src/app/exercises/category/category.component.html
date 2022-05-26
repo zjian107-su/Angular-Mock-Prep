@@ -1,0 +1,13 @@
+<!-- <div *ngFor="let [key, value] of categoryMap">
+  {{key}}
+</div> -->
+
+<dl *ngFor="let key of getCategoriesKeys()">
+  <dt>
+    <h1>{{key}}</h1>
+  </dt>
+  <dd>
+    <!-- <p *ngFor="let catagories of categoryObject[key]">{{ catagories }}</p> -->
+    {{categoryObject[key]}}
+  </dd>
+</dl>

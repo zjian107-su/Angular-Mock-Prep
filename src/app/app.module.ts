@@ -8,11 +8,12 @@ import { TitleAuthorComponent } from './exercises/title-author/title-author.comp
 
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
+import { CategoryComponent } from './exercises/category/category.component';
 
 
 
 @NgModule({
-  declarations: [AppComponent, CardComponent, TitleAuthorComponent],
+  declarations: [AppComponent, CardComponent, TitleAuthorComponent, CategoryComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
