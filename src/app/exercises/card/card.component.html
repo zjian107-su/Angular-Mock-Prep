@@ -1,22 +1,6 @@
-<!-- <div *ngFor="let user of users, let i = index">
-  <h2 (click)="onClick(i)">{{user.name}}</h2>
-  <div *ngIf="user.isExpanded">
-    <dl *ngFor="let post of user.posts">
-      <dt>
-        <h3>{{ post.title }}</h3>
-      </dt>
-      <dd>
-        {{ post.body }}
-      </dd>
-    </dl>
-  </div>
-
-</div> -->
-
-
 <dl *ngFor="let user of users, let i = index">
   <dt>
-    <h2 (click)="onClick(i)">{{user.name}}</h2>
+    <h2 (click)="onClick(i)" class="title">{{user.name}}</h2>
   </dt>
   <dd>
     <div *ngIf="user.isExpanded">
@@ -30,5 +14,4 @@
       </dl>
     </div>
   </dd>
-
 </dl>
