@@ -1,0 +1,12 @@
+<div class="flex">
+  <div><label for="search">Search:</label></div>
+  <div><input type="text" [formControl]="searchQuery" placeholder="input search" /></div>
+</div>
+
+
+<div *ngFor="let work of searchedWorks">
+  <h2>{{work.title}}</h2>
+  <div *ngFor="let author of work.authors">
+    <p>{{author.name}}</p>
+  </div>
+</div>
