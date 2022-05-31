@@ -10,11 +10,13 @@ import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CategoryComponent } from './exercises/category/category.component';
 import { RegistFormComponent } from './exercises/regist-form/regist-form.component';
+import { RecursiveNavComponent } from './exercises/recursive-nav/recursive-nav.component';
+import { RecursiveNavChildComponent } from './exercises/recursive-nav/recursive-nav-child/recursive-nav-child.component';
 
 
 
 @NgModule({
-  declarations: [AppComponent, CardComponent, TitleAuthorComponent, CategoryComponent, RegistFormComponent],
+  declarations: [AppComponent, CardComponent, TitleAuthorComponent, CategoryComponent, RegistFormComponent, RecursiveNavComponent, RecursiveNavChildComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

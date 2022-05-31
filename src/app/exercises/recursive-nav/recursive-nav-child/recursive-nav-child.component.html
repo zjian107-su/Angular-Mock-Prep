@@ -1,0 +1,10 @@
+<dl *ngFor="let child of children">
+  <dt (click)="onClick(child)">
+    <span>{{child.children? child.expanded? '▼': '▶': '●'}}{{child.name}}</span>
+  </dt>
+
+  <dd>
+    <app-recursive-nav-child *ngIf="child.children && child.expanded"
+      [children]="child.children"></app-recursive-nav-child>
+  </dd>
+</dl>
