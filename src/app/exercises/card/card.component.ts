@@ -29,7 +29,7 @@ export class CardComponent implements OnInit {
   ngOnInit(): void {
     this.getPosts().subscribe({
       next: (posts) => {
-        this.posts = posts;
+        this.posts = posts; 
       },
       complete: () => {
         this.getUsers().subscribe({
