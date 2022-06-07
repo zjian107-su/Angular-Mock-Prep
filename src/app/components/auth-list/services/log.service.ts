@@ -25,4 +25,11 @@ export class LogService {
   isLoggedIn(): string | null {
     return localStorage.getItem('cookie');
   }
+
+  clearCookie(): void {
+    if (localStorage.getItem('cookie') !== null) {
+      localStorage.removeItem('cookie');
+      console.log('remove success');
+    }
+  }
 }

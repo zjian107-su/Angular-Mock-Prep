@@ -20,6 +20,7 @@ export class ListService {
         next: (data) => (this.users = data),
       });
   }
+
   getPosts(): void {
     this.http
       .get<Post[]>('https://jsonplaceholder.typicode.com/posts')
