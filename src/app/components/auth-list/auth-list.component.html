@@ -1,0 +1,5 @@
+<app-form *ngIf="!logService.isLoggedIn();else loggedIn "></app-form>
+
+<ng-template #loggedIn>
+  <app-list></app-list>
+</ng-template>

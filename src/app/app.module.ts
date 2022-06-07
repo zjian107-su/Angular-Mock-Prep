@@ -17,6 +17,9 @@ import { RecursiveNavChildComponent } from './exercises/recursive-nav/recursive-
 import { CounterComponent } from './exercises/counter/counter.component';
 
 import { counterReducer } from './exercises/counter/counter.reducer';
+import { AuthListComponent } from './components/auth-list/auth-list.component';
+import { ListComponent } from './components/auth-list/list/list.component';
+import { FormComponent } from './components/auth-list/form/form.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +31,9 @@ import { counterReducer } from './exercises/counter/counter.reducer';
     RecursiveNavComponent,
     RecursiveNavChildComponent,
     CounterComponent,
+    AuthListComponent,
+    ListComponent,
+    FormComponent,
   ],
   imports: [
     BrowserModule,
