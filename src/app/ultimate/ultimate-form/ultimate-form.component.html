@@ -1,0 +1,15 @@
+<form [formGroup]="signGroup" (ngSubmit)="onSubmit()" class="'container'">
+  <label for="name">Name</label>
+  <input type="text" formControlName="name" />
+  <div *ngIf="signGroup.controls.name.hasError('required')">Error here: Name Required!!!</div>
+  <div *ngIf="signGroup.controls.name.hasError('capitalized')">Error here: First Char needs to be Capitalized!!</div>
+
+  <label for="password" id="password">Password</label>
+  <input type="text" name="password" formControlName="password" />
+
+  <label for="email" id="email">Email</label>
+  <input type="text" name="email" formControlName="email" />
+
+
+  <button type="submit" [ngStyle]="{width:'30%'} "><span>Click to Submit</span></button>
+</form>

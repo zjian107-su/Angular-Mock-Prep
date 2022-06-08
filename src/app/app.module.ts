@@ -1,3 +1,4 @@
+import { UltimateFormComponent } from './ultimate/ultimate-form/ultimate-form.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -7,7 +8,7 @@ import { CardComponent } from './exercises/card/card.component';
 import { TitleAuthorComponent } from './exercises/title-author/title-author.component';
 
 import { HttpClientModule } from '@angular/common/http';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { StoreModule } from '@ngrx/store';
 
 import { CategoryComponent } from './exercises/category/category.component';
@@ -20,7 +21,6 @@ import { counterReducer } from './exercises/counter/counter.reducer';
 import { AuthListComponent } from './components/auth-list/auth-list.component';
 import { ListComponent } from './components/auth-list/list/list.component';
 import { FormComponent } from './components/auth-list/form/form.component';
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,6 +34,7 @@ import { FormComponent } from './components/auth-list/form/form.component';
     AuthListComponent,
     ListComponent,
     FormComponent,
+    UltimateFormComponent,
   ],
   imports: [
     BrowserModule,
