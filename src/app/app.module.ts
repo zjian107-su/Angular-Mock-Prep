@@ -21,6 +21,7 @@ import { counterReducer } from './exercises/counter/counter.reducer';
 import { AuthListComponent } from './components/auth-list/auth-list.component';
 import { ListComponent } from './components/auth-list/list/list.component';
 import { FormComponent } from './components/auth-list/form/form.component';
+import { ReactiveFormCrossValidationComponent } from './exercises/reactive-form-cross-validation/reactive-form-cross-validation.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,6 +36,7 @@ import { FormComponent } from './components/auth-list/form/form.component';
     ListComponent,
     FormComponent,
     UltimateFormComponent,
+    ReactiveFormCrossValidationComponent,
   ],
   imports: [
     BrowserModule,

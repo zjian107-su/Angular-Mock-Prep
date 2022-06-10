@@ -1,0 +1,13 @@
+label{
+  display: block
+}
+
+input{
+  display: block
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 30%
+}

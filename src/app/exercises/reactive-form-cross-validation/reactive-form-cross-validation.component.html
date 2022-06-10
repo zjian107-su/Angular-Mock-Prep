@@ -1,0 +1,19 @@
+<form class="container" [formGroup]="form">
+  <label for="firstName">firstName</label>
+  <input type="text" id="firstName" formControlName="firstName" />
+
+  <div [ngStyle]="{display: 'flex', 'justify-content': 'space-between'}">
+    <label for="lastName">LastName</label>
+    <ng-container *ngIf="form.hasError('namesMatch')">
+      <span [ngStyle]="{color: 'red'}">Same name</span>
+    </ng-container>
+  </div>
+  <input type="text" id="lastName" formControlName="lastName" />
+  <label for="email">Email</label>
+  <input type="text" id="email" formControlName="email" />
+</form>
+
+<dl *ngFor="let user of users">
+  <dt>{{user.email}}</dt>
+  <dd><span>{{user.firstName}}, {{user.lastName}}</span></dd>
+</dl>
