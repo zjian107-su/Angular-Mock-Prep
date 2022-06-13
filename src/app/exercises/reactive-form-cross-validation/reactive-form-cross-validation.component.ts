@@ -1,8 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { Observable, of } from 'rxjs';
+import { of } from 'rxjs';
 import { NamesMatchValidator } from './namesMatchValidator';
+import { CapitalizedValidator } from './capitalizedValidator';
 
+/**
+ * FormGroup Validator
+ */
 interface User {
   firstName: string;
   lastName: string;
@@ -38,8 +42,8 @@ export class ReactiveFormCrossValidationComponent implements OnInit {
   users: User[] = [] as User[];
   form: FormGroup = this.fb.group(
     {
-      firstName: ['daniel'],
-      lastName: ['daniele'],
+      firstName: ['daniel', [CapitalizedValidator()]],
+      lastName: ['daniele', [CapitalizedValidator()]],
       email: ['jiang@gmail.com', [Validators.email]],
     },
     { validators: NamesMatchValidator }

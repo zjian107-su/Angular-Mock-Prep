@@ -1,11 +1,19 @@
 <form class="container" [formGroup]="form">
+  <div [ngStyle]="{display: 'flex', 'justify-content': 'space-between'}">
   <label for="firstName">firstName</label>
+    <ng-container *ngIf="form.get('firstName')!.hasError('capitalized')">
+      <span [ngStyle]="{color: 'red'}">Cap!</span>
+    </ng-container>
+    </div>
   <input type="text" id="firstName" formControlName="firstName" />
 
   <div [ngStyle]="{display: 'flex', 'justify-content': 'space-between'}">
     <label for="lastName">LastName</label>
     <ng-container *ngIf="form.hasError('namesMatch')">
       <span [ngStyle]="{color: 'red'}">Same name</span>
+    </ng-container>
+    <ng-container *ngIf="form.get('lastName')!.hasError('capitalized')">
+      <span [ngStyle]="{color: 'red'}">Cap!</span>
     </ng-container>
   </div>
   <input type="text" id="lastName" formControlName="lastName" />
