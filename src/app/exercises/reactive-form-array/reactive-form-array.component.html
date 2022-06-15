@@ -1,14 +1,12 @@
 <h1>Daniel</h1>
 
-<button (click)="addLesson()">Add</button>
+<button (click)="addPhoneNumber()">Add</button>
 <form [formGroup]="form" (ngSubmit)="onSubmit()">
   <input type="text" formControlName="mike" [placeholder]="form.controls.mike.value" />
-  <ng-container formArrayName="lessons">
-    <div *ngFor="let lessonForm of lessons.controls; let i = index" [formGroupName]="i">
-      <!-- Attention line 07-->
-      <button (click)="deleteLesson(i)">Delete this one</button>
-      <input type="text" formControlName="title" />
-      <input type="text" formControlName="body" />
+  <ng-container formArrayName="phoneNumbers">
+    <div *ngFor="let phoneNumberGroup of phoneNumbers.controls; let i = index" [formGroupName]="i">
+      <button (click)="deletePhoneNumber(i)">Delete this one</button>
+      <input type="text" formControlName="number" placeholder="Enter 10 digit phone number" />
     </div>
   </ng-container>
 

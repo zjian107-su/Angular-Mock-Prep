@@ -1,5 +1,21 @@
 import { Component } from '@angular/core';
-import { FormArray, FormBuilder, Validators } from '@angular/forms';
+import {
+  AbstractControl,
+  FormArray,
+  FormBuilder,
+  Validators,
+  ValidationErrors,
+} from '@angular/forms';
+
+function phoneNumberValidator(
+  control: AbstractControl
+): ValidationErrors | null {
+  const validPhoneNumberRegex = /^[0-9]{10}$/;
+  if (!control.value.match(validPhoneNumberRegex)) {
+    return { invalidPhoneNumber: true };
+  }
+  return null;
+}
 
 @Component({
   selector: 'app-reactive-form-array',
@@ -9,34 +25,32 @@ import { FormArray, FormBuilder, Validators } from '@angular/forms';
 export class ReactiveFormArrayComponent {
   form = this.fb.group({
     mike: ['mike', []],
-    lessons: this.fb.array([]),
+    phoneNumbers: this.fb.array([]),
   });
 
   constructor(private fb: FormBuilder) {}
 
-  get lessons() {
-    return this.form.controls['lessons'] as FormArray;
+  get phoneNumbers() {
+    return this.form.controls['phoneNumbers'] as FormArray;
   }
 
-  addLesson() {
-    const lessonForm = this.fb.group({
-      title: ['', Validators.required],
-      body: ['beginner', Validators.required],
+  addPhoneNumber() {
+    const phoneNumberGroup = this.fb.group({
+      number: ['', [Validators.required, phoneNumberValidator]],
     });
 
-    this.lessons.push(lessonForm);
-    console.log(this.form.controls.lessons.length);
+    this.phoneNumbers.push(phoneNumberGroup);
   }
 
-  deleteLesson(lessonIndex: number) {
-    this.lessons.removeAt(lessonIndex);
-  }
-
-  getType(value: any): string {
-    return typeof value;
+  deletePhoneNumber(index: number) {
+    this.phoneNumbers.removeAt(index);
   }
 
   onSubmit() {
-    console.log(this.form.value);
+    if (this.form.valid) {
+      console.log(this.form.value);
+    } else {
+      alert('Not valid!');
+    }
   }
 }
