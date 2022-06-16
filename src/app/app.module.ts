@@ -23,6 +23,8 @@ import { ListComponent } from './components/auth-list/list/list.component';
 import { FormComponent } from './components/auth-list/form/form.component';
 import { ReactiveFormCrossValidationComponent } from './exercises/reactive-form-cross-validation/reactive-form-cross-validation.component';
 import { ReactiveFormArrayComponent } from './exercises/reactive-form-array/reactive-form-array.component';
+import { ReactiveFormInputTypesComponent } from './exercises/reactive-form-input-types/reactive-form-input-types.component';
+import { AutoFocusDirective } from './exercises/reactive-form-input-types/diretives/auto-focus.directive';
 
 @NgModule({
   declarations: [
@@ -40,6 +42,8 @@ import { ReactiveFormArrayComponent } from './exercises/reactive-form-array/reac
     UltimateFormComponent,
     ReactiveFormCrossValidationComponent,
     ReactiveFormArrayComponent,
+    ReactiveFormInputTypesComponent,
+    AutoFocusDirective,
   ],
   imports: [
     BrowserModule,

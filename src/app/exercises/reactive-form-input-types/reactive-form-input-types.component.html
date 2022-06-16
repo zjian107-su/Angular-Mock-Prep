@@ -1,0 +1,27 @@
+<h2>Radio buttons</h2>
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <label>
+    <input type="radio" formControlName="contactMethod" value="Email">
+    Email
+  </label>
+  <label>
+    <input type="radio" formControlName="contactMethod" value="Phone">
+    Phone
+  </label>
+  <label>
+    <input type="radio" formControlName="contactMethod" value="Post">
+    Post
+  </label>
+
+  <div *ngIf="form.controls['contactMethod'].value === 'Email'">
+    <input type="email" formControlName="email" appAutoFocus>
+  </div>
+  <div *ngIf="form.controls['contactMethod'].value === 'Phone'">
+    <input type="tel" formControlName="phone" appAutoFocus>
+  </div>
+  <div *ngIf="form.controls['contactMethod'].value === 'Post'">
+    <textarea formControlName="post" appAutoFocus></textarea>
+  </div>
+
+  <button type="submit">Submit</button>
+</form>
