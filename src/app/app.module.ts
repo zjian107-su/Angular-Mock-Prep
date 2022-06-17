@@ -25,6 +25,7 @@ import { ReactiveFormCrossValidationComponent } from './exercises/reactive-form-
 import { ReactiveFormArrayComponent } from './exercises/reactive-form-array/reactive-form-array.component';
 import { ReactiveFormInputTypesComponent } from './exercises/reactive-form-input-types/reactive-form-input-types.component';
 import { AutoFocusDirective } from './exercises/reactive-form-input-types/diretives/auto-focus.directive';
+import { ReactiveFormInputDropdownComponent } from './exercises/reactive-form-input-dropdown/reactive-form-input-dropdown.component';
 
 @NgModule({
   declarations: [
@@ -44,6 +45,7 @@ import { AutoFocusDirective } from './exercises/reactive-form-input-types/direti
     ReactiveFormArrayComponent,
     ReactiveFormInputTypesComponent,
     AutoFocusDirective,
+    ReactiveFormInputDropdownComponent,
   ],
   imports: [
     BrowserModule,
