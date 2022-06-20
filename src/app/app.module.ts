@@ -26,6 +26,8 @@ import { ReactiveFormArrayComponent } from './exercises/reactive-form-array/reac
 import { ReactiveFormInputTypesComponent } from './exercises/reactive-form-input-types/reactive-form-input-types.component';
 import { AutoFocusDirective } from './exercises/reactive-form-input-types/diretives/auto-focus.directive';
 import { ReactiveFormInputDropdownComponent } from './exercises/reactive-form-input-dropdown/reactive-form-input-dropdown.component';
+import { AutoNavComponent } from './components/auto-nav/auto-nav.component';
+import { AutoNavChildComponent } from './components/auto-nav/auto-nav-child/auto-nav-child.component';
 
 @NgModule({
   declarations: [
@@ -46,6 +48,8 @@ import { ReactiveFormInputDropdownComponent } from './exercises/reactive-form-in
     ReactiveFormInputTypesComponent,
     AutoFocusDirective,
     ReactiveFormInputDropdownComponent,
+    AutoNavComponent,
+    AutoNavChildComponent,
   ],
   imports: [
     BrowserModule,
