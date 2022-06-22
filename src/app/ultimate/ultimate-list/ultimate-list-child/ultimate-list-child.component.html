@@ -1,0 +1,18 @@
+<dt>
+
+  <h2 (click)="toggleExpanded(data)">
+    <b>{{data.name}}</b>
+  </h2>
+
+</dt>
+
+<ng-container *ngIf="data.isExpanded">
+  <dd *ngFor="let post of this.ps.userPostMap.get(data.id)">
+    <dl>
+      <dt>
+        <h3>{{post.title}}</h3>
+      </dt>
+      <dd>{{post.body}}</dd>
+    </dl>
+  </dd>
+</ng-container>

@@ -1,0 +1,22 @@
+<input type="text" [formControl]="this.ps.query" placeholder="filter by name">
+
+
+<dl *ngFor="let user of this.ps.showUsers">
+
+  <!-- <dt>
+    <h2>{{user.name}}</h2>
+  </dt>
+
+  <dd *ngFor="let post of this.ps.userPostMap.get(user.id)">
+    <dl>
+      <dt>
+        <h3>{{post.title}}</h3>
+      </dt>
+      <dd>{{post.body}}</dd>
+    </dl>
+  </dd> -->
+
+  <!-- replace above code with the components -->
+  <app-ultimate-list-child [data]="user"></app-ultimate-list-child>
+
+</dl>

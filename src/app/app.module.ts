@@ -28,6 +28,8 @@ import { AutoFocusDirective } from './exercises/reactive-form-input-types/direti
 import { ReactiveFormInputDropdownComponent } from './exercises/reactive-form-input-dropdown/reactive-form-input-dropdown.component';
 import { AutoNavComponent } from './components/auto-nav/auto-nav.component';
 import { AutoNavChildComponent } from './components/auto-nav/auto-nav-child/auto-nav-child.component';
+import { UltimateListComponent } from './ultimate/ultimate-list/ultimate-list.component';
+import { UltimateListChildComponent } from './ultimate/ultimate-list/ultimate-list-child/ultimate-list-child.component';
 
 @NgModule({
   declarations: [
@@ -50,6 +52,8 @@ import { AutoNavChildComponent } from './components/auto-nav/auto-nav-child/auto
     ReactiveFormInputDropdownComponent,
     AutoNavComponent,
     AutoNavChildComponent,
+    UltimateListComponent,
+    UltimateListChildComponent,
   ],
   imports: [
     BrowserModule,
