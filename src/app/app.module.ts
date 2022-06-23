@@ -30,6 +30,8 @@ import { AutoNavComponent } from './components/auto-nav/auto-nav.component';
 import { AutoNavChildComponent } from './components/auto-nav/auto-nav-child/auto-nav-child.component';
 import { UltimateListComponent } from './ultimate/ultimate-list/ultimate-list.component';
 import { UltimateListChildComponent } from './ultimate/ultimate-list/ultimate-list-child/ultimate-list-child.component';
+import { ViewchildAFocusComponent } from './exercises/viewchild-a-focus/viewchild-a-focus.component';
+import { ViewchildAFocusChildComponent } from './exercises/viewchild-a-focus/viewchild-a-focus-child/viewchild-a-focus-child.component';
 
 @NgModule({
   declarations: [
@@ -54,6 +56,8 @@ import { UltimateListChildComponent } from './ultimate/ultimate-list/ultimate-li
     AutoNavChildComponent,
     UltimateListComponent,
     UltimateListChildComponent,
+    ViewchildAFocusComponent,
+    ViewchildAFocusChildComponent,
   ],
   imports: [
     BrowserModule,
