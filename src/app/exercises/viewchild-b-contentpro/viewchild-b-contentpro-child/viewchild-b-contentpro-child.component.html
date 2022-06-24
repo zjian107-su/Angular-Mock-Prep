@@ -1,0 +1,8 @@
+<ng-container *ngIf="currentContent==='A'">
+  <ng-content select="[toggleContent='contentA']"></ng-content>
+</ng-container>
+<ng-container *ngIf="currentContent==='B'">
+  <ng-content select="[toggleContent='contentB']"></ng-content>
+</ng-container>
+
+<button (click)="toggle()">Toggle Content</button>

@@ -32,6 +32,8 @@ import { UltimateListComponent } from './ultimate/ultimate-list/ultimate-list.co
 import { UltimateListChildComponent } from './ultimate/ultimate-list/ultimate-list-child/ultimate-list-child.component';
 import { ViewchildAFocusComponent } from './exercises/viewchild-a-focus/viewchild-a-focus.component';
 import { ViewchildAFocusChildComponent } from './exercises/viewchild-a-focus/viewchild-a-focus-child/viewchild-a-focus-child.component';
+import { ViewchildBContentproComponent } from './exercises/viewchild-b-contentpro/viewchild-b-contentpro.component';
+import { ViewchildBContentproChildComponent } from './exercises/viewchild-b-contentpro/viewchild-b-contentpro-child/viewchild-b-contentpro-child.component';
 
 @NgModule({
   declarations: [
@@ -58,6 +60,8 @@ import { ViewchildAFocusChildComponent } from './exercises/viewchild-a-focus/vie
     UltimateListChildComponent,
     ViewchildAFocusComponent,
     ViewchildAFocusChildComponent,
+    ViewchildBContentproComponent,
+    ViewchildBContentproChildComponent,
   ],
   imports: [
     BrowserModule,

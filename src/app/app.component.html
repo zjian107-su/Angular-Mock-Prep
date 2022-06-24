@@ -1,6 +1,9 @@
-<app-viewchild-a-focus></app-viewchild-a-focus>
+<ng-container *ngIf="!devMode">
 
-<ng-container *ngIf="devMode">
+  <app-viewchild-b-contentpro></app-viewchild-b-contentpro>
+  <app-viewchild-a-focus></app-viewchild-a-focus>
+
+  
   <app-ultimate-list></app-ultimate-list>
   <app-auto-nav></app-auto-nav>
 
