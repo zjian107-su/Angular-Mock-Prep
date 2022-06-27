@@ -1,0 +1,4 @@
+<input type="text" [(ngModel)]="filter" />
+<div *ngFor="let employee of employees | filterDepartment: filter">
+  {{employee | json}}
+</div>

@@ -38,7 +38,8 @@ import { PipePlaygroundComponent } from './topics/pipe/pipe-playground/pipe-play
 import { CustomSortComponent } from './exercises/pipes/custom-sort/custom-sort.component';
 import { OlderThan18Pipe } from './exercises/pipes/custom-sort.pipe';
 import { CustomDateComponent } from './exercises/pipes/custom-date/custom-date.component';
-
+import { CustomFilterComponent } from './exercises/pipes/custom-filter/custom-filter.component';
+import { filterDepartmentPipe } from './exercises/pipes/custom-filter.pipe';
 
 @NgModule({
   declarations: [
@@ -71,6 +72,8 @@ import { CustomDateComponent } from './exercises/pipes/custom-date/custom-date.c
     CustomSortComponent,
     OlderThan18Pipe,
     CustomDateComponent,
+    CustomFilterComponent,
+    filterDepartmentPipe,
   ],
   imports: [
     BrowserModule,
