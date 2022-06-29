@@ -40,6 +40,8 @@ import { OlderThan18Pipe } from './exercises/pipes/custom-sort.pipe';
 import { CustomDateComponent } from './exercises/pipes/custom-date/custom-date.component';
 import { CustomFilterComponent } from './exercises/pipes/custom-filter/custom-filter.component';
 import { filterDepartmentPipe } from './exercises/pipes/custom-filter.pipe';
+import { ValidatorsComponent } from './exercises/validators/validators.component';
+import { ValidatorPasswordComponent } from './exercises/validators/validator-password/validator-password.component';
 
 @NgModule({
   declarations: [
@@ -74,6 +76,8 @@ import { filterDepartmentPipe } from './exercises/pipes/custom-filter.pipe';
     CustomDateComponent,
     CustomFilterComponent,
     filterDepartmentPipe,
+    ValidatorsComponent,
+    ValidatorPasswordComponent,
   ],
   imports: [
     BrowserModule,
