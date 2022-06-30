@@ -43,6 +43,8 @@ import { filterDepartmentPipe } from './exercises/pipes/custom-filter.pipe';
 import { ValidatorsComponent } from './exercises/validators/validators.component';
 import { ValidatorPasswordComponent } from './exercises/validators/validator-password/validator-password.component';
 import { ValidatorLengthComponent } from './exercises/validators/validator-length/validator-length.component';
+import { NotificationComponent } from './exercises/notification/notification.component';
+import { SubjectThemeComponent } from './exercises/subject-theme/subject-theme.component';
 
 @NgModule({
   declarations: [
@@ -80,6 +82,8 @@ import { ValidatorLengthComponent } from './exercises/validators/validator-lengt
     ValidatorsComponent,
     ValidatorPasswordComponent,
     ValidatorLengthComponent,
+    NotificationComponent,
+    SubjectThemeComponent,
   ],
   imports: [
     BrowserModule,
