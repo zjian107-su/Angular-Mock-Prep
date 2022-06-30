@@ -1,0 +1,12 @@
+<button (click)="addTags()">Click to add tags</button>
+
+<div *ngFor="let control of tags.controls; let i = index">
+  <input type="text" [formControl]="control" placeholder="Enter a tag">
+  <button (click)="removeTag(i)">Remove this tag</button>
+</div>
+
+<ng-container *ngIf="tags.hasError('badLength')" [ngStyle]="{'background-color': 'red'}">
+
+  <p>Not enough length!</p>
+
+</ng-container>

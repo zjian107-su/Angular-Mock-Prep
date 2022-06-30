@@ -42,6 +42,7 @@ import { CustomFilterComponent } from './exercises/pipes/custom-filter/custom-fi
 import { filterDepartmentPipe } from './exercises/pipes/custom-filter.pipe';
 import { ValidatorsComponent } from './exercises/validators/validators.component';
 import { ValidatorPasswordComponent } from './exercises/validators/validator-password/validator-password.component';
+import { ValidatorLengthComponent } from './exercises/validators/validator-length/validator-length.component';
 
 @NgModule({
   declarations: [
@@ -78,6 +79,7 @@ import { ValidatorPasswordComponent } from './exercises/validators/validator-pas
     filterDepartmentPipe,
     ValidatorsComponent,
     ValidatorPasswordComponent,
+    ValidatorLengthComponent,
   ],
   imports: [
     BrowserModule,
