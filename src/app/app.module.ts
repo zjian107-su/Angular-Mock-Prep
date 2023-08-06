@@ -34,6 +34,9 @@ import { ViewchildAFocusComponent } from './exercises/viewchild-a-focus/viewchil
 import { ViewchildAFocusChildComponent } from './exercises/viewchild-a-focus/viewchild-a-focus-child/viewchild-a-focus-child.component';
 import { ViewchildBContentproComponent } from './exercises/viewchild-b-contentpro/viewchild-b-contentpro.component';
 import { ViewchildBContentproChildComponent } from './exercises/viewchild-b-contentpro/viewchild-b-contentpro-child/viewchild-b-contentpro-child.component';
+import { PipePlaygroundComponent } from './topics/pipe/pipe-playground/pipe-playground.component';
+import { CustomSortComponent } from './exercises/pipes/custom-sort/custom-sort.component';
+import { OlderThan18Pipe } from './exercises/pipes/custom-sort.pipe';
 
 @NgModule({
   declarations: [
@@ -62,6 +65,9 @@ import { ViewchildBContentproChildComponent } from './exercises/viewchild-b-cont
     ViewchildAFocusChildComponent,
     ViewchildBContentproComponent,
     ViewchildBContentproChildComponent,
+    PipePlaygroundComponent,
+    CustomSortComponent,
+    OlderThan18Pipe,
   ],
   imports: [
     BrowserModule,
