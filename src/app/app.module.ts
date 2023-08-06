@@ -37,6 +37,8 @@ import { ViewchildBContentproChildComponent } from './exercises/viewchild-b-cont
 import { PipePlaygroundComponent } from './topics/pipe/pipe-playground/pipe-playground.component';
 import { CustomSortComponent } from './exercises/pipes/custom-sort/custom-sort.component';
 import { OlderThan18Pipe } from './exercises/pipes/custom-sort.pipe';
+import { CustomDateComponent } from './exercises/pipes/custom-date/custom-date.component';
+
 
 @NgModule({
   declarations: [
@@ -68,12 +70,14 @@ import { OlderThan18Pipe } from './exercises/pipes/custom-sort.pipe';
     PipePlaygroundComponent,
     CustomSortComponent,
     OlderThan18Pipe,
+    CustomDateComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
+    FormsModule,
     StoreModule.forRoot({ count: counterReducer }),
   ],
   providers: [],

@@ -1,0 +1,10 @@
+<div>
+  <select name="date" id="date" [(ngModel)]="method">
+    <option value="shortDate">Short Date</option>
+    <option value="fullDate">Full Date</option>
+  </select>
+</div>
+
+<div>
+  {{date | date: method}}
+</div>
